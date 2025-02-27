@@ -1,4 +1,4 @@
-define('DS/GetDocData/scripts/getDocInfo', ["DS/WAFData/WAFData", "DS/i3DXCompassServices/i3DXCompassServices", "DS/PlatformAPI/PlatformAPI","DS\GetDocData\scripts\common"], function (WAFData, i3DXCompassServices, PlatformAPI, common) {
+define('DS/GetDocData/scripts/getDocInfo', ["DS/WAFData/WAFData", "DS/i3DXCompassServices/i3DXCompassServices", "DS/PlatformAPI/PlatformAPI","DS/GetDocData/scripts/common"], function (WAFData, i3DXCompassServices, PlatformAPI, common) {
     "use strict";
     var secContext;
     var getInfo = {
