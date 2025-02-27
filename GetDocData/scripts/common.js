@@ -1,5 +1,5 @@
 
-define(function() {
+define(["DS/WAFData/WAFData", "DS/i3DXCompassServices/i3DXCompassServices", "DS/PlatformAPI/PlatformAPI","DS/GetDocData/scripts/common"],function(WAFData, i3DXCompassServices, PlatformAPI) {
     "use strict";
     
     // Example function you want to export
