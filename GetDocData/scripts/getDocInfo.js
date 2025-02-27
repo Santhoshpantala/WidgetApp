@@ -1,4 +1,4 @@
-define('DS/GetDocData/scripts/getDocInfo', ["DS/WAFData/WAFData", "DS/i3DXCompassServices/i3DXCompassServices", "DS/PlatformAPI/PlatformAPI"], function (WAFData, i3DXCompassServices, PlatformAPI) {
+define('DS/GetDocData/scripts/getDocInfo', ["DS/WAFData/WAFData", "DS/i3DXCompassServices/i3DXCompassServices", "DS/PlatformAPI/PlatformAPI","DS\GetDocData\scripts\common"], function (WAFData, i3DXCompassServices, PlatformAPI, common) {
     "use strict";
     var secContext;
     var getInfo = {
@@ -9,6 +9,7 @@ define('DS/GetDocData/scripts/getDocInfo', ["DS/WAFData/WAFData", "DS/i3DXCompas
             var docTitle = widget.getValue("documentTitle");
             console.log("docTitle::::", docTitle);
             var Style = document.createElement("style");
+            common.getServiceURL();
             getInfo.getDocInfo();
             Style.textContent = `table {
                    width: 100%;
